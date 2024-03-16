@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Bold - 700 */
+/* Regular - 400 */
+:root{
+    --primary-color: #96BB7C;
+    --text-color: #252B42;
+    --second-text-color: #737373;
+    --secondary-green-color: #fafafa;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1045px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.bold{
+    font-weight: 700;
+}
+.regular{
+    font-weight: 400;
+}
+.header{
+    background: var(--secondary-green-color);
+    padding: 17px 0px 0px 0px;
+}
+.header__left{
+    display: flex;
+    gap: 89px;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: var(--second-text-color);
+    text-decoration: none;
+}
+
+.nav__link{
+    margin-left: 21px;
+}
+
+.nav__link:nth-child(1){
+    margin-left: 0;
+}
+
+.header__interactions{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.header__login__link{
+    color: var(--primary-color);
+}
+.banner__secondary{
+    color: var(--second-text-color);
+    font-size: 20px;
+    margin: 35px 0px;
+}
+.nav__cart__link{
+    width: 91px;
+    height: 52px;
+}
+
+.banner{
+    background: var(--secondary-green-color);
+    padding-bottom: 100px;
+}
+
+.banner__header{
+    font-size: 50px;
+    line-height: 138%;
+}
+.banner__text{
+    margin-top: 33px;
+}
+.banner__link:nth-child(1){
+    width: 193px;
+    height: 52px;
+}
+.banner__link:nth-child(2){
+    width: 162px;
+    height: 52px;
+}
+.banner__container{
+    display: flex;
+    flex-direction: column;
+}
+.banner__top{
+    display: flex;
+}
+.banner__image img{
+    width: 100%;
+}
+.btn-fill{
+    background: var(--primary-color);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+.btn-outline{
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__cards{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -120px;
+}
+
+.banner__card{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    width: 328px;
+    height: 274px;
+}
+.banner__card h2{
+    font-size: 23px;
+    margin: 20px 0px;
+}
+.banner__card p{
+    font-size: 14px;
+}
+.banner__card__container{
+    height: 200px;
+    width: 221px;
+}
+
+
+.clients__quantity{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients__quantity__card{
+    text-align: center;
+}
+
+.clients__quantity__card h1{
+    color: var(--primary-color);
+    font-size: 58px;
+}
+.clients__matter{
+    padding: 160px 0px;
+}
+.clients__matter__container{
+    display: flex;
+    align-items: center;
+}
+.clients__matter__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.clients__matter__text a{
+    display: flex;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.clients__matter__text a img{
+    margin-left: 10px;
+}
+
+.clients__matter__text p{
+    font-size: 14px;
+}
+
+.clients__matter__text h1{
+    font-size: 40px;    
+}
+
+.courses{
+    background: #fff2f3;
+    padding: 160px 0px;
+}
+
+.courses__cards{
+    display: flex;
+    justify-content: space-between;
+}
+.courses__card{
+    max-width: 330px;
+}
+.courses__card__body{
+    background: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.courses__card__body h5{
+    font-size: 16px;
+}
+
+.courses__card__body .readMore{
+    width: 151px;
+    height: 44px;
+    border-radius: 37px;
+    font-weight: 700;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.courses__card__body p:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.courses__card__body a img{
+    margin-left: 10px;
+}
+.courses__card__head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.courses__card__head img[alt="cover"]{
+    width: 100%;
+}
+.card__cart__icon{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 45px;
+    position: absolute;
+    bottom: 24px;
+    cursor: pointer;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.footer__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart{
+    padding: 10px;
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.footer__socials{
+    display: flex;
+    gap: 20px;
+}
+.footer{
+    padding: 29px 0px;
+}
+.footer__form{
+    display: flex;
+    justify-content: center;
+}
+.footer__form *{
+    border: 1px solid #e6e6e6;
+    height: 58px;
+}
+
+.email__input{
+    width: 571px;
+    padding: 0px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.footer__bottom h6{
+    font-size: 14px;
+}
+
+.btn__submit{
+    width: 117px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.clients__matter__paragraph{
+    color: var(--primary-color);
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.showPart{
+    display: none;
+}
